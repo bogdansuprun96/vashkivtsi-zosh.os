@@ -1,0 +1,286 @@
+/*Підключаю Bootstrap Framework*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+
+
+@font-face {
+    font-family: Baronneue;
+    src: url(../fonts/glyphicons-halflings-regular.ttf);
+}
+
+li {
+    list-style-type: none;
+}
+
+#logo {
+    height: 150px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+
+
+#header-h1 {
+    color: #fff;
+    margin-top: 75px;
+    font-family: Baronneue, 'Calibri', cursive;
+    border: 1px solid black;
+    background: #000;
+    padding: 0px 20px 15px 20px;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+#header-quote {
+    color: white;
+    position: absolute;
+    top: 0px;
+    margin-top: 15px;
+}
+
+.header-col {
+    background: url('/img/PANO_20170626_123100.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.row.modal-footer {
+    background-color: #38363d;
+    color: #59dee5;
+}
+
+.row.modal-footer a {
+    color: #59dee5;
+}
+
+.row.modal-footer a:hover {
+    text-decoration: none;
+    color: #3ba5aa;
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu-navbar {
+    border-radius: 0px;
+    border: none;
+}
+
+.active-custom>a {
+    background-color: #c9e2b3;
+}
+
+.view-btn {
+    background-color: green;
+    border-color: green;
+    border-radius: 0px;
+}
+
+.modal-footer {
+    text-align: left;
+}
+
+.footer-col {
+    padding: 4px;
+}
+
+.row.black {
+    background: #38363d;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+#address {
+    float: right;
+    margin-right: 10px;
+}
+
+#phone {
+    float: left;
+    margin-left: 10px;
+}
+
+.example2 {
+    display:inline-block;
+    position:relative;
+
+}
+.example2 span {
+    display:inline-block;
+    position:absolute;
+    bottom:10px;
+    left:5px;
+
+    /* Оформление текста */
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+
+    /* Фон */
+    background-color:rgba(0,0,0,.4);
+    padding:2px 5px;
+}
+
+.photo-gallery {
+    height: 140px;
+    margin-bottom: 3px;
+}
+
+.photo-galley-content {
+    margin-bottom: 30px;
+    padding: 0px;
+}
+
+.parents-content {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 350px) {
+    div.navbar-header {
+        width: 100%;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 306px) and (max-width: 767px) {
+    .row.black {
+        background: #38363d;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    iframe {
+        width: 700px;
+    }
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    iframe {
+        width: 1000px;
+        margin-bottom:31px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+.input-group-addon {
+    border-radius: 0px;
+}
+
+input[type="text"] {
+    border-radius: 0px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+
+
+/*Animation*/
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+    width: 22px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.navbar-toggle .icon-bar:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+}
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
+    transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(1) {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggle.collapsed .icon-bar:nth-of-type(3) {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+
+
+/*фото*/
+
+.am-wrapper{
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.am-wrapper img{
+    position:absolute;
+    outline:none;
+}
+
+
+/*Login Block*/
+
+.login {
+    padding-bottom: 20px;
+}
+
+
+.center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto;}

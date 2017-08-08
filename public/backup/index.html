@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="/slider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/slider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Slider</title>
+</head>
+<body>
+<ul class="bxslider">
+    <div class="content-section" style="background: url('img/03.jpg') no-repeat; height: 300px">
+        <h1 class="content-section-h1">Header</h1>
+        <p class="content-section-p">Lorem ipsum dolor</p>
+    </div>
+    <div class="content-section">
+        <h1 class="content-section-h1">Header</h1>
+        <p class="content-section-p">Lorem ipsum dolor</p>
+    </div>
+    <div class="content-section">
+        <h1 class="content-section-h1">Header</h1>
+        <p class="content-section-p">Lorem ipsum dolor</p>
+    </div>
+    <!--<li><img class="images-slider" src="/img/056-960x350.jpg" /></li>-->
+    <!--<li><img class="images-slider" src="/img/Cao_shan_moonscape_world_cover.jpg" /></li>-->
+    <!--<li><img class="images-slider" src="/img/InnerCityNature-1.jpg" /></li>-->
+    <!--<li><img class="images-slider" src="/img/InnerCityNature-2.jpg" /></li>-->
+    <!--<li><img class="images-slider" src="/img/nature-2331576_960_720.jpg" /></li>-->
+</ul>
+
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            pager: false,
+            controls: true,
+            slideWidth: 200,
+            slideMargin: 10,
+            speed: 1000,
+            tickerHover: true,
+        });
+    });
+</script>
+</body>
+</html>
